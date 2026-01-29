@@ -30,7 +30,7 @@
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 {{ "<![endif]-->" | safeHTML }}
-{{ if eq $.Site.IsServer false }}
+{{ if not hugo.IsServer }}
 <script type="text/javascript">
   ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
     p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
@@ -46,7 +46,7 @@
 {{ end }}
 
 <script src='https://js.tito.io/v2' async></script>
-{{ if $.Site.IsServer }}
+{{ if hugo.IsServer }}
 {{ "<!-- Tito is running in Development Mode! -->" | safeHTML }}
 <script>TitoDevelopmentMode = true</script>
 {{ end }}

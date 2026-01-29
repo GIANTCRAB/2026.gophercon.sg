@@ -262,3 +262,64 @@ p {
     url("/img/partners-bg.png") no-repeat center 100px,
     var(--gradient) no-repeat center 70px / 100% 22rem;
 }
+
+/* Call for Papers Section */
+.cfp-section {
+  background-color: var(--brand-blue);
+  padding: 5rem 0;
+  
+  @media (min-width: 768px) {
+    padding: 7rem 0;
+  }
+}
+
+.cfp-section h2 {
+  color: #fff;
+}
+
+.cfp-section p {
+  color: #fff;
+  line-height: 1.75;
+}
+
+.cfp-section .cta-button {
+  font-size: 1.125rem;
+  padding: 0.75rem 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cfp-section .cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(238, 64, 89, 0.3);
+}
+
+/* Sponsors Section */
+.sponsors-section {
+  background: linear-gradient(180deg, #f0fdff 0%, #ffffff 100%);
+  border-top: 4px solid var(--brand-blue);
+  padding: 5rem 0;
+  
+  @media (min-width: 768px) {
+    padding: 7rem 0;
+  }
+}
+
+.sponsors-section h2 {
+  color: #1D2939;
+}
+
+.sponsors-section p {
+  color: #475467;
+  line-height: 1.75;
+}
+
+.sponsors-section .cta-button {
+  font-size: 1.125rem;
+  padding: 0.75rem 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sponsors-section .cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(238, 64, 89, 0.3);
+}

@@ -1,0 +1,42 @@
+---
+import ComingSoon from "@/components/ComingSoon.astro";
+import SpeakerProfile from "@/components/SpeakerProfile.astro";
+import TicketCta from "@/components/TicketCta.astro";
+import { isLineupConfirmed } from "@/config";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { speakers } from "@/lib/data";
+import { speakerImages } from "@/lib/images";
+---
+
+<BaseLayout
+  title="Speakers"
+  description="Meet the speakers at GopherCon Singapore 2026"
+>
+  {speakers.length > 0 ? (
+    <>
+      {/* Detail Cards Grid */}
+      <section class="page-bg" style="padding: 3rem 0 4rem;">
+        <div class="container">
+          <h1 style="font-size: 2.5rem; font-weight: 800; text-align: center; margin-bottom: 2rem;">Speakers</h1>
+          {!isLineupConfirmed && (
+            <p style="text-align: center; color: #555; margin-bottom: 2rem; font-size: 1.1rem;"><em>More speakers will be announced as they are confirmed.</em></p>
+          )}
+          <div class="flex flex-wrap gap-8 justify-center">
+            {speakers.map((speaker) => (
+              <SpeakerProfile speaker={speaker} imageMap={speakerImages} />
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  ) : (
+    <div class="page-bg">
+      <div class="container" style="padding: 3rem 1rem 4rem;">
+        <h1 style="font-size: 2.5rem; font-weight: 800; text-align: center; margin-bottom: 2rem;">Speakers</h1>
+        <ComingSoon message="Speaker lineup" />
+      </div>
+    </div>
+  )}
+
+  <TicketCta />
+</BaseLayout>

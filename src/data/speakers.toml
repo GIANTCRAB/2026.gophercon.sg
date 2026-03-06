@@ -1,0 +1,47 @@
+[[speakers]]
+id = "dave-cheney"
+name = "Dave Cheney"
+company = "GitHub"
+image = "dave-cheney.jpg"
+topicTitle = "To be confirmed"
+topicLink = "/schedule#dave-cheney"
+keynote = false
+socialUrl = "https://twitter.com/davecheney"
+description = """David is an open source contributor and project member for the Go programming language. David is a well-respected voice within the tech community, speaking on a variety of topics such as software design, performance, and the Go programming language."""
+
+[[speakers]]
+id = "bill-kennedy"
+name = "William Kennedy"
+company = "Ardan Labs"
+image = "bill-kennedy.jpg"
+topicTitle = "Ultimate Software Design and Engineering"
+topicLink = "/workshops#software-design"
+keynote = false
+socialUrl = "https://twitter.com/goinggodotnet"
+description = """William Kennedy is a managing partner at Ardan Labs in Miami, Florida, a mobile, web, and systems development company. He is also a co-author of the book Go in Action, the author of the blog GoingGo.Net, and a founding member of GoBridge which is working to increase Go adoption through diversity."""
+
+[[speakers]]
+id = "florin-patan"
+name = "Florin Pățan"
+company = "Ardan Labs"
+image = "florin-patan.jpg"
+topicTitle = "Ultimate Practical AI"
+topicLink = "/workshops#practical-ai"
+keynote = false
+socialUrl = "https://twitter.com/dlsniper"
+description = """Florin Pățan is a consultant at Ardan Labs with over 12 years of Go experience. He's worked across distributed systems, application architecture, observability, and cloud infrastructure — with time spent at fintech, healthcare, and AI companies like Bread Financial, Press Ganey, drand, and PredictionGuard.
+
+He has worked AI startups and enterprise companies where he built the infrastructure from the ground up and designed the systems backend from scratch, taking an early-stage platform to something production teams could actually rely on. Before Ardan Labs, he was at JetBrains as a Developer Advocate for Go — contributing to the Delve debugger and helping make GoLand the IDE that thousands of Go developers use daily."""
+
+[[speakers]]
+id = "ron-evans"
+name = "Ron Evans"
+company = "The Hybrid Group"
+image = "ron-evans.webp"
+topicTitle = "Hardware Hacking with TinyGo"
+topicLink = "/schedule#ron-evans"
+keynote = false
+socialUrl = "https://twitter.com/deadprogram"
+description = """Ron is an award-winning software developer and expert in robotics/IoT/computer vision who is very active in the free and open-source community. He has helped many clients such as AT&T, Intel, Sphero, and Northvolt solve some of their most difficult technical and business problems.
+
+Ron is a code contributor to many open-source hardware/software projects and is one of the maintainers of TinyGo (https://tinygo.org), as well as the creator of the open-source IoT/robotics framework Gobot (https://gobot.io), computer vision framework GoCV (https://gocv.io), and embedded WebAssembly framework Mechanoid (https://mechanoid.io)."""

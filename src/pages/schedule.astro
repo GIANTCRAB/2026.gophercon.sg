@@ -1,0 +1,45 @@
+---
+import ComingSoon from "@/components/ComingSoon.astro";
+import ScheduleEntry from "@/components/ScheduleEntry.astro";
+import TicketCta from "@/components/TicketCta.astro";
+import Timeline from "@/components/Timeline.astro";
+import { isNavEnabled } from "@/config";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { schedule } from "@/lib/data";
+import { speakerImages } from "@/lib/images";
+
+const showTabs = isNavEnabled("/schedule") && isNavEnabled("/workshops");
+---
+
+<BaseLayout
+  title="Schedule"
+  description="Conference schedule for GopherCon Singapore 2026"
+>
+  <div class="page-bg">
+    <div class="container" style="padding-top: 3rem; padding-bottom: 4rem;">
+      <h1 style="font-size: 2.5rem; font-weight: 800; text-align: center; margin-bottom: 2rem;">Conference Schedule</h1>
+
+      {showTabs && (
+        <div style="display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 2.5rem; flex-wrap: wrap;">
+          <a href="/schedule" class="schedule-tab active">Conference</a>
+          <a href="/workshops" class="schedule-tab">Workshops</a>
+        </div>
+      )}
+
+      {schedule.length > 0 ? (
+        <>
+          <p style="text-align: center; margin-bottom: 2rem; color: #888; font-style: italic; font-size: 0.95rem;">Schedule is subject to change.</p>
+          <Timeline>
+            {schedule.map((entry) => (
+              <ScheduleEntry entry={entry} imageMap={speakerImages} />
+            ))}
+          </Timeline>
+        </>
+      ) : (
+        <ComingSoon message="Schedule" />
+      )}
+
+      <TicketCta />
+    </div>
+  </div>
+</BaseLayout>

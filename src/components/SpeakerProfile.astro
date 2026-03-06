@@ -1,0 +1,86 @@
+---
+import { Image } from "astro:assets";
+import { type ImageMap, resolveSpeakerImage } from "@/lib/images";
+import type { Speaker } from "@/types";
+import { Icon } from "astro-icon/components";
+import { marked } from "marked";
+
+interface Props {
+  speaker: Speaker;
+  imageMap: ImageMap;
+}
+
+const { speaker, imageMap } = Astro.props;
+const descriptionHtml = marked.parse(speaker.description);
+
+function getSocialHandle(url: string): string {
+  try {
+    const pathname = new URL(url).pathname;
+    const handle = pathname.split("/").filter(Boolean).pop();
+    return handle ? `@${handle}` : url;
+  } catch {
+    return url;
+  }
+}
+---
+
+<div id={speaker.id} class="flex-[1_1_340px] max-w-[500px] bg-white border border-[#e0e0e0] rounded-2xl p-8 shadow-[0_2px_12px_rgba(0,0,0,0.08)] transition-[transform,box-shadow] duration-200 scroll-mt-[5.5rem] hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
+  <div class="flex items-center gap-5 mb-4">
+    <div class="w-20 h-20 rounded-full overflow-hidden shrink-0" style="border: 3px solid var(--color-brand-blue);">
+      <Image
+        src={resolveSpeakerImage(imageMap, speaker.image)}
+        alt={speaker.name}
+        width={80}
+        height={80}
+        class="w-full h-full object-cover"
+      />
+    </div>
+    <div>
+      {speaker.keynote && (
+        <span class="text-brand-red text-[0.8rem] font-semibold uppercase tracking-[0.5px]">&mdash; Keynote Speaker &mdash;</span>
+      )}
+      <div class="flex items-center gap-2 flex-wrap">
+        <h3 style="font-size: 1.15rem; margin-bottom: 0; line-height: 1.3;">{speaker.name}</h3>
+        <span class="copy-link-wrapper">
+          <button
+            type="button"
+            class="copy-link"
+            data-href={`/speakers#${speaker.id}`}
+            aria-label="Copy link to this speaker"
+          >
+            <Icon name="fa:link" class="w-3.5 h-3.5" />
+          </button>
+          <span class="copy-link-tooltip" aria-live="polite">Copied!</span>
+        </span>
+      </div>
+      {speaker.company && (
+        <div style="color: #888; font-size: 0.9rem;">{speaker.company}</div>
+      )}
+    </div>
+  </div>
+
+  {speaker.topicTitle && (
+    <div class="text-[#007d9c] font-semibold mt-3 mb-2 text-base">
+      <a href={speaker.topicLink} class="text-inherit">{speaker.topicTitle}</a>
+    </div>
+  )}
+
+  <div class="speaker-bio text-[#555] text-[0.9rem] leading-[1.6]" set:html={descriptionHtml} />
+
+  {speaker.socialUrl && (
+    <a
+      href={speaker.socialUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      style="display: inline-block; margin-top: 0.75rem; font-size: 0.85rem; font-weight: 600; color: var(--color-brand-blue);"
+    >
+      {getSocialHandle(speaker.socialUrl)} &rarr;
+    </a>
+  )}
+</div>
+
+<style>
+  .speaker-bio :global(p) {
+    margin-bottom: 0.5rem;
+  }
+</style>

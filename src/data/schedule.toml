@@ -1,0 +1,43 @@
+[[schedule]]
+id = "registration"
+title = "Registration"
+description = "Doors open at 8 AM. See you there!"
+time = "8:00 AM"
+type = "meta"
+recordingUrl = ""
+
+[[schedule.speakers]]
+name = "GopherCon Singapore Team"
+
+[[schedule]]
+id = "opening-remarks"
+title = "Opening Remarks"
+description = ""
+time = "9:00 AM"
+type = "meta"
+recordingUrl = ""
+
+[[schedule.speakers]]
+name = "GopherCon Singapore Team"
+
+[[schedule]]
+id = "closing-remarks"
+title = "Closing Remarks & Group Photo"
+description = ""
+time = "4:45 PM"
+type = "meta"
+recordingUrl = ""
+
+[[schedule.speakers]]
+name = "GopherCon Singapore Team"
+
+[[schedule]]
+id = "after-party"
+title = "$GOPHERCONSG/after/party/🎉"
+description = ""
+time = "7:00 PM to 11:59 PM"
+type = "break"
+recordingUrl = ""
+
+[[schedule.speakers]]
+name = "GopherCon Singapore Team"

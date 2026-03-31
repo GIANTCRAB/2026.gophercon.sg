@@ -26,6 +26,12 @@ export interface ScheduleEntry {
   speakers: ScheduleSpeaker[];
 }
 
+export interface WorkshopTeamMember {
+  name: string;
+  image?: string;
+  bio: string;
+}
+
 export interface Workshop {
   id: string;
   title: string;
@@ -42,6 +48,7 @@ export interface Workshop {
   venueRegistration?: string;
   venueMapUrl?: string;
   additional?: string;
+  teamMembers?: WorkshopTeamMember[];
 }
 
 export interface Sponsor {

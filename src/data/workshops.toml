@@ -164,7 +164,7 @@ speaker = "TinyGo Keeb community (Japan)"
 speakerLink = "https://tinygo-keeb.org/"
 speakerImage = "tinygokeeb-sago35.png"
 speakerSocialUrl = "https://x.com/tinygo_keeb"
-date = "20 & 21 May 2026"
+date = "20 May 2026"
 time = "9:30am to 5:30pm"
 venueRegistration = ""
 venueMapUrl = ""
@@ -229,11 +229,6 @@ bio = """Corporate IT Engineer at Mercari, Inc. Active in the Go community throu
 name = "Takanobu Hagino (taknb2nch)"
 image = "tinygokeeb-taknb2nch.png"
 bio = """Software engineer with experience across the full development lifecycle. TinyGo Keeb core member — primarily handles rework on the TinyGo Keeb Tour."""
-
-[[workshops.teamMembers]]
-name = "Yusuke"
-image = "tinygokeeb-yusuke.jpg"
-bio = """Backend engineer specializing in Go with a passion for mathematical statistics. Organizes the TinyGo Keeb Tour and pursues research in health sciences and ordinary differential equations."""
 
 [[workshops.teamMembers]]
 name = "Daisuke Makiuchi (MakKi)"

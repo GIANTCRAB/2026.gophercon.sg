@@ -1,0 +1,20 @@
+---
+import RedirectLayout from "@/layouts/RedirectLayout.astro";
+
+const cfpUrl =
+  "https://docs.google.com/forms/d/e/1FAIpQLSfZZ0bPyxsa1s0QGGZWiNPqufz0uNjMp8INxjSoIAAp07bscg/viewform";
+---
+
+<RedirectLayout
+  title="Lightning Talks Call for Proposals"
+  description="Submit your lightning talk proposal for GopherCon Singapore 2026."
+  redirectURL={cfpUrl}
+>
+  <section class="container" style="padding: 4rem 1rem; text-align: center;">
+    <h2>Lightning Talks Call for Proposals</h2>
+    <p>
+      Redirecting you to our CFP form. If you are not redirected automatically,
+      <a href={cfpUrl}>click here</a>.
+    </p>
+  </section>
+</RedirectLayout>

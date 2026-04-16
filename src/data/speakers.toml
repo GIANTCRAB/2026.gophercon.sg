@@ -1,13 +1,45 @@
 [[speakers]]
-id = "dave-cheney"
-name = "Dave Cheney"
-company = "GitHub"
-image = "dave-cheney.jpg"
-topicTitle = "To be confirmed"
-topicLink = "/schedule#dave-cheney"
+id = "alex-rios"
+name = "Alex Rios"
+company = "Stone"
+image = "alex-rios.jpg"
+topicTitle = "Green Tea GC: The Insight Behind Go's New Garbage Collector"
+topicLink = "/#alex-rios"
 keynote = false
-socialUrl = "https://twitter.com/davecheney"
-description = """David is an open source contributor and project member for the Go programming language. David is a well-respected voice within the tech community, speaking on a variety of topics such as software design, performance, and the Go programming language."""
+socialUrl = "https://www.linkedin.com/in/the-alex-rios/"
+description = """"Alex is a Senior Staff Engineer at Stone, where he builds developer platforms and internal tools that empower engineering teams across the organization. With 17+ years of experience, he's the author of System Programming Essentials with Go and Learning Zig, and writes about staff engineering and systems thinking on Substack and his personal blog.
+
+Alex speaks regularly at international conferences and is passionate about data-oriented design, making complex systems understandable, and helping engineers grow into technical leadership roles."""
+
+
+[[speakers]]
+id = "arseniy-terekhov"
+name = "Arseniy Terekhov"
+company = "JetBrains"
+image = "arseniy-terekhov.webp"
+topicTitle = "Bridging the Context Gap: Modern Go for Tools and Agents"
+topicLink = "/#arseniy-terekhov"
+keynote = false
+socialUrl = "https://www.linkedin.com/in/arseniy-terekhov-579444272"
+description = """I work on the Go IDE at JetBrains, contributing to Go language support, code insight features, and integrations with Go tooling to improve the overall developer experience.
+
+My primary specialization is static code analysis. I focus on detecting bugs related to nil, such as nil pointer dereferences and panics, and work on interprocedural dataflow analysis that follows values across function boundaries to uncover subtle issues.
+
+Recently, I have been exploring how modern AI coding agents generate Go code and why they often produce outdated patterns. As part of this work, I created the repository https://github.com/JetBrains/go-modern-guidelines, which defines guidelines that help coding agents generate modern, idiomatic Go.
+
+Before working on Go tooling, I developed static analysis tools for C and C++."""
+
+[[speakers]]
+id = "ethan-lee"
+name = "Ethan Lee"
+company = "Go Team"
+image = "ethan-lee.jpg"
+topicTitle = "Bridging the Context Gap: Modern Go for Tools and Agents"
+topicLink = "/#ethan-lee"
+keynote = false
+socialUrl = "https://www.linkedin.com/in/ethanalee"
+description = """Ethan Lee is a member of the Go Team, focusing on modern Go development for tools and agents. He is passionate about improving the Go ecosystem and bridging the gap between context and practical application in software development."""
+
 
 [[speakers]]
 id = "bill-kennedy"
@@ -19,6 +51,17 @@ topicLink = "/workshops#software-design"
 keynote = false
 socialUrl = "https://twitter.com/goinggodotnet"
 description = """William Kennedy is a managing partner at Ardan Labs in Miami, Florida, a mobile, web, and systems development company. He is also a co-author of the book Go in Action, the author of the blog GoingGo.Net, and a founding member of GoBridge which is working to increase Go adoption through diversity."""
+
+[[speakers]]
+id = "dave-cheney"
+name = "Dave Cheney"
+company = "GitHub"
+image = "dave-cheney.jpg"
+topicTitle = "To be confirmed"
+topicLink = "/#dave-cheney"
+keynote = false
+socialUrl = "https://www.linkedin.com/in/turboencabulator"
+description = """David is an open source contributor and project member for the Go programming language. David is a well-respected voice within the tech community, speaking on a variety of topics such as software design, performance, and the Go programming language."""
 
 [[speakers]]
 id = "florin-patan"
@@ -34,14 +77,48 @@ description = """Florin Pățan is a consultant at Ardan Labs with over 12 years
 He has worked AI startups and enterprise companies where he built the infrastructure from the ground up and designed the systems backend from scratch, taking an early-stage platform to something production teams could actually rely on. Before Ardan Labs, he was at JetBrains as a Developer Advocate for Go — contributing to the Delve debugger and helping make GoLand the IDE that thousands of Go developers use daily."""
 
 [[speakers]]
+id = "sago35"
+name = "Masaaki Takasago (sago35)"
+company = "TinyGo Keeb"
+image = "tinygokeeb-sago35.png"
+topicTitle = "Build Your Own USB HID Keyboard with TinyGo (Live Coding)"
+topicLink = "/#sago35"
+keynote = false
+socialUrl = "https://x.com/sago35tk"
+description = """Masaaki Takasago is an embedded software engineer who works with Go for both professional and hobby projects. A contributor to the TinyGo project and the author of a book on TinyGo, he is the creator of the "TinyGo Keeb Tour," a hands-on workshop that combines hardware soldering with Go firmware development. In 2025, he organized the TinyGo Conference in Japan, actively expanding the Go ecosystem into embedded systems and custom keyboards."""
+
+[[speakers]]
 id = "ron-evans"
 name = "Ron Evans"
 company = "The Hybrid Group"
 image = "ron-evans.webp"
 topicTitle = "Hardware Hacking with TinyGo"
-topicLink = "/schedule#ron-evans"
+topicLink = "/#ron-evans"
 keynote = false
 socialUrl = "https://twitter.com/deadprogram"
 description = """Ron is an award-winning software developer and expert in robotics/IoT/computer vision who is very active in the free and open-source community. He has helped many clients such as AT&T, Intel, Sphero, and Northvolt solve some of their most difficult technical and business problems.
 
 Ron is a code contributor to many open-source hardware/software projects and is one of the maintainers of TinyGo (https://tinygo.org), as well as the creator of the open-source IoT/robotics framework Gobot (https://gobot.io), computer vision framework GoCV (https://gocv.io), and embedded WebAssembly framework Mechanoid (https://mechanoid.io)."""
+
+[[speakers]]
+id = "ronna-steinberg"
+name = "Ronna Steinberg"
+company = ""
+image = "ronna-steinberg.jpg"
+topicTitle = "Concurrency + Testing = testing/synctest"
+topicLink = "/#ronna-steinberg"
+keynote = false
+socialUrl = "https://www.linkedin.com/in/ronnas"
+description = """Ronna is a Google Developer Expert for Go, a technologist, a Women Who Go organizer, and GoTime‚Äôs "Unpopular Opinion" hall of famer. After over 20 years in software development, Ronna knows that she is the sum of the opportunities that were given to her, which is why she helps others through mentorship. She has been crafting hands-on workshops in Go since 2017, and is looking forward to seeing you in Go meetups and conferences."""
+
+[[speakers]]
+id = "sivchari"
+name = "Takuma Shibuya"
+company = "newmo, Inc"
+image = "sivchari.jpg"
+topicTitle = "Your Tests Pass, But Do They Work? Mutation Testing in Go"
+topicLink = "/#sivchari"
+keynote = false
+socialUrl = "https://www.linkedin.com/in/sivchari/"
+description = """A Go and Cloud Native engineer. Leads the largest Go conference in Japan. Maintainer of Kubernetes and Kubernetes SIGs, and Argo CD maintainer. Also maintains several Go OSS projects."""
+

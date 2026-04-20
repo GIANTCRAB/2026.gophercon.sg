@@ -1,0 +1,10 @@
+name = "William Kennedy"
+company = "Ardan Labs"
+image = "bill-kennedy.jpg"
+socialUrl = "https://twitter.com/goinggodotnet"
+bio = """William Kennedy is a managing partner at Ardan Labs in Miami, Florida, a mobile, web, and systems development company. He is also a co-author of the book Go in Action, the author of the blog GoingGo.Net, and a founding member of GoBridge which is working to increase Go adoption through diversity."""
+
+[[sessions]]
+title = "Kronk: Hardware accelerated local inference"
+kind = "talk"
+description = """Running AI models locally means no API costs, no data leaving your machine, and no vendor lock-in — but integrating local inference into Go applications has traditionally been painful. In this talk, Bill will introduce Kronk, a Go SDK that lets you embed local model inference directly into your applications with full GPU acceleration — no CGO required. Whether it's chat, vision, audio, embeddings, or tool calling, Kronk gives you the same power as a model server without needing one. To prove it, Bill built a Model Server entirely on top of the SDK, complete with caching, batch processing, and agent support. You'll see live demos from writing your first chat app to driving a coding agent with a local model."""

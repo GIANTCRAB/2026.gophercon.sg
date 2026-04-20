@@ -1,43 +1,60 @@
 [[schedule]]
-id = "registration"
-title = "Registration"
-description = "Doors open at 8 AM. See you there!"
-time = "8:00 AM"
-type = "meta"
-recordingUrl = ""
-
-[[schedule.speakers]]
-name = "GopherCon Singapore Team"
+type = "keynote"
+speakers = ["ron-evans"]
 
 [[schedule]]
-id = "opening-remarks"
-title = "Opening Remarks"
-description = ""
-time = "9:00 AM"
-type = "meta"
-recordingUrl = ""
+id = "ai-panel"
+title = "Software Development in the Age of AI"
+type = "panel"
+description = """AI is reshaping how software is written, reviewed, and operated. This panel brings together industry leaders to discuss how development practices are evolving, what skills matter most, and how teams are adapting to an AI-augmented future."""
+moderator = "dave-cheney"
 
-[[schedule.speakers]]
-name = "GopherCon Singapore Team"
+[[schedule.panelists]]
+id = "sau-sheong"
 
-[[schedule]]
-id = "closing-remarks"
-title = "Closing Remarks & Group Photo"
-description = ""
-time = "4:45 PM"
-type = "meta"
-recordingUrl = ""
+[[schedule.panelists]]
+id = "bill-kennedy"
 
-[[schedule.speakers]]
-name = "GopherCon Singapore Team"
+[[schedule.panelists]]
+tba = true
+
+[[schedule.panelists]]
+tba = true
 
 [[schedule]]
-id = "after-party"
-title = "$GOPHERCONSG/after/party/🎉"
-description = ""
-time = "7:00 PM to 11:59 PM"
-type = "break"
-recordingUrl = ""
+type = "talk"
+speakers = ["ethan-lee"]
 
-[[schedule.speakers]]
-name = "GopherCon Singapore Team"
+[[schedule]]
+type = "talk"
+speakers = ["sago35"]
+
+[[schedule]]
+type = "talk"
+speakers = ["ronna-steinberg"]
+
+[[schedule]]
+type = "talk"
+speakers = ["alex-rios"]
+
+[[schedule]]
+type = "talk"
+speakers = ["bill-kennedy"]
+
+[[schedule]]
+type = "talk"
+speakers = ["arseniy-terekhov"]
+
+[[schedule]]
+type = "talk"
+speakers = ["sivchari"]
+
+[[schedule]]
+id = "lightning-talks"
+title = "Lightning Talks"
+type = "lightning"
+description = """A rapid-fire session of short community talks. 5 minutes each."""
+
+[[schedule]]
+type = "talk"
+speakers = ["dave-cheney"]

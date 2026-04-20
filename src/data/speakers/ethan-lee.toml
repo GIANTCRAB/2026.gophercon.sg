@@ -1,0 +1,10 @@
+name = "Ethan Lee"
+company = "Go Team"
+image = "ethan-lee.jpg"
+socialUrl = "https://www.linkedin.com/in/ethanalee"
+bio = """Ethan Lee is a member of the Go Team, focusing on modern Go development for tools and agents. He is passionate about improving the Go ecosystem and bridging the gap between context and practical application in software development."""
+
+[[sessions]]
+title = "Bridging the Context Gap: Modern Go for Tools and Agents"
+kind = "talk"
+description = """Agents are only as effective as the tools we give them. We're building the official Pkgsite API and MCP server to provide machine-readable access to the Go ecosystem. Discover how we're re-architecting Go's data for a world where agents reason with precision. Welcome to the future of Go tooling."""

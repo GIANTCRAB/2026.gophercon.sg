@@ -1,0 +1,18 @@
+name = "Ron Evans"
+company = "The Hybrid Group"
+image = "ron-evans.webp"
+socialUrl = "https://twitter.com/deadprogram"
+bio = """Ron is an award-winning software developer and expert in robotics/IoT/computer vision who is very active in the free and open-source community. He has helped many clients such as AT&T, Intel, Sphero, and Northvolt solve some of their most difficult technical and business problems.
+
+Ron is a code contributor to many open-source hardware/software projects and is one of the maintainers of TinyGo (https://tinygo.org), as well as the creator of the open-source IoT/robotics framework Gobot (https://gobot.io), computer vision framework GoCV (https://gocv.io), and embedded WebAssembly framework Mechanoid (https://mechanoid.io)."""
+
+[[sessions]]
+title = "That Machine Always Lies: Truth and Fiction in the Age of Artificial Intelligence"
+kind = "keynote"
+description = """Recent events in machine learning are outpacing most people’s ability to keep up with the news, let alone try to analyze the impact.
+
+There actually is a massive shift underway that it is important for everyone to try to understand. However, it is hard to filter out both the hype and the hysteria.
+
+“That Machine Always Lies: Truth and Fiction in the Age of Artificial Intelligence” tries to help explain how we got here, what is going on right now, and what may happen next.
+
+And most importantly, help you and your company figure about what to do about it."""

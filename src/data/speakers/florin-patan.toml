@@ -1,0 +1,7 @@
+name = "Florin Pățan"
+company = "Ardan Labs"
+image = "florin-patan.jpg"
+socialUrl = "https://twitter.com/dlsniper"
+bio = """Florin Pățan is a consultant at Ardan Labs with over 12 years of Go experience. He's worked across distributed systems, application architecture, observability, and cloud infrastructure — with time spent at fintech, healthcare, and AI companies like Bread Financial, Press Ganey, drand, and PredictionGuard.
+
+He has worked AI startups and enterprise companies where he built the infrastructure from the ground up and designed the systems backend from scratch, taking an early-stage platform to something production teams could actually rely on. Before Ardan Labs, he was at JetBrains as a Developer Advocate for Go — contributing to the Delve debugger and helping make GoLand the IDE that thousands of Go developers use daily."""

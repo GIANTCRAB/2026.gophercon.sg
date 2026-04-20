@@ -1,0 +1,16 @@
+name = "Arseniy Terekhov"
+company = "JetBrains"
+image = "arseniy-terekhov.webp"
+socialUrl = "https://www.linkedin.com/in/arseniy-terekhov-579444272"
+bio = """I work on the Go IDE at JetBrains, contributing to Go language support, code insight features, and integrations with Go tooling to improve the overall developer experience.
+
+My primary specialization is static code analysis. I focus on detecting bugs related to nil, such as nil pointer dereferences and panics, and work on interprocedural dataflow analysis that follows values across function boundaries to uncover subtle issues.
+
+Recently, I have been exploring how modern AI coding agents generate Go code and why they often produce outdated patterns. As part of this work, I created the repository https://github.com/JetBrains/go-modern-guidelines, which defines guidelines that help coding agents generate modern, idiomatic Go.
+
+Before working on Go tooling, I developed static analysis tools for C and C++."""
+
+[[sessions]]
+title = "Teaching AI to Write Modern Go"
+kind = "talk"
+description = """AI coding agents often write outdated Go, generating patterns like manual loops to search slices instead of using slices.Contains. This talk explains why it happens, what "modern Go" means today, and how guidelines and benchmarks can teach agents to generate idiomatic Go code."""

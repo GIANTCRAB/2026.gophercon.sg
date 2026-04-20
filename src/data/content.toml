@@ -13,6 +13,23 @@ conferenceVenue = "JW Marriott Singapore Ballroom"
 conferenceVenueUrl = "https://maps.app.goo.gl/7ag5ZuZWJ5NHSxsc9"
 practicalInfo = ""
 
+[newThisYear]
+# Toggle the "New this year" banner on the landing page.
+enabled = true
+label = "New this year"
+
+[[newThisYear.items]]
+icon = "🎤"
+title = "Panel Discussion"
+description = "a candid on-stage conversation between senior Go practitioners."
+href = "/schedule#ai-panel"
+
+[[newThisYear.items]]
+icon = "⚡"
+title = "Lightning Talks"
+description = "rapid-fire community talks, 5 minutes each."
+href = "/schedule#lightning-talks"
+
 [tickets]
 headline = "Tickets"
 buttonText = "Get Your Ticket Now"

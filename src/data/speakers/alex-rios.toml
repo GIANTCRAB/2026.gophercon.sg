@@ -1,0 +1,12 @@
+name = "Alex Rios"
+company = "Stone"
+image = "alex-rios.jpg"
+socialUrl = "https://www.linkedin.com/in/the-alex-rios/"
+bio = """"Alex is a Senior Staff Engineer at Stone, where he builds developer platforms and internal tools that empower engineering teams across the organization. With 17+ years of experience, he's the author of System Programming Essentials with Go and Learning Zig, and writes about staff engineering and systems thinking on Substack and his personal blog.
+
+Alex speaks regularly at international conferences and is passionate about data-oriented design, making complex systems understandable, and helping engineers grow into technical leadership roles."""
+
+[[sessions]]
+title = "Green Tea GC: The Insight Behind Go's New Garbage Collector"
+kind = "talk"
+description = """Green Tea's insight is elegant: scan spans, not objects. But how do you actually implement that? What data structures track which objects are marked vs. scanned? Why does the ownership protocol use three states? And how did span-based scanning unlock SIMD optimizations that were impossible before?"""

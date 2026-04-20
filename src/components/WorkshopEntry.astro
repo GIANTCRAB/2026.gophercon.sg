@@ -1,9 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import { type ImageMap, findSpeakerImage } from "@/lib/images";
+import { md } from "@/lib/markdown";
 import type { Workshop } from "@/types";
 import { Icon } from "astro-icon/components";
-import { marked } from "marked";
 
 interface Props {
   workshop: Workshop;
@@ -22,15 +22,18 @@ const syllabusMd = hasSyllabus
   ? workshop.description.substring(h4Index).trim()
   : "";
 
-const overviewHtml = marked.parse(overviewMd);
-const syllabusHtml = hasSyllabus ? marked.parse(syllabusMd) : "";
-const speakerBioHtml = marked.parse(workshop.speakerBio);
+const overviewHtml = md(overviewMd);
+const syllabusHtml = hasSyllabus ? md(syllabusMd) : "";
 const prerequisitesHtml = workshop.prerequisites
-  ? marked.parse(workshop.prerequisites)
+  ? md(workshop.prerequisites)
   : "";
-const venueHtml = marked.parse(workshop.venue);
+const venueHtml = md(workshop.venue);
 
-const speakerImg = findSpeakerImage(speakerImageMap, workshop.speakerImage);
+const primary = workshop.instructors[0];
+const primaryImg = primary?.image
+  ? findSpeakerImage(speakerImageMap, primary.image)
+  : null;
+const primaryName = primary?.name ?? "";
 
 // Resolve team member images
 const teamMembers = (workshop.teamMembers ?? []).map((member) => ({
@@ -38,7 +41,7 @@ const teamMembers = (workshop.teamMembers ?? []).map((member) => ({
   resolvedImage: member.image
     ? findSpeakerImage(speakerImageMap, member.image)
     : null,
-  bioHtml: marked.parse(member.bio),
+  bioHtml: md(member.bio),
 }));
 const hasTeam = teamMembers.length > 0;
 ---
@@ -71,17 +74,17 @@ const hasTeam = teamMembers.length > 0;
       </div>
     ) : (
       <div class="w-20 h-20 rounded-full overflow-hidden shrink-0 border-[3px] border-brand-blue">
-        {speakerImg ? (
+        {primaryImg ? (
           <Image
-            src={speakerImg}
-            alt={workshop.speaker}
+            src={primaryImg}
+            alt={primaryName}
             width={80}
             height={80}
             class="w-full h-full object-cover"
           />
         ) : (
           <div class="w-full h-full bg-gradient-to-br from-brand-blue to-[#0e7490] flex items-center justify-center text-white text-[1.75rem] font-bold">
-            {workshop.speaker.charAt(0)}
+            {primaryName.charAt(0)}
           </div>
         )}
       </div>
@@ -103,17 +106,22 @@ const hasTeam = teamMembers.length > 0;
       </h2>
       <div class="text-[0.95rem] text-[#555] mb-2 leading-[1.6]">
         by{" "}
-        <a href={workshop.speakerLink} class="text-link-blue font-semibold">{workshop.speaker}</a>
-        {workshop.speakerSocialUrl && (
-          <a
-            href={workshop.speakerSocialUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center ml-2 text-link-blue"
-          >
-            <Icon name="fa:twitter" class="w-3.5 h-3.5" />
-          </a>
-        )}
+        {workshop.instructors.map((ins, idx) => (
+          <>
+            {idx > 0 && <span>, </span>}
+            <a href={ins.link} class="text-link-blue font-semibold">{ins.name}</a>
+            {ins.socialUrl && (
+              <a
+                href={ins.socialUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center ml-2 text-link-blue"
+              >
+                <Icon name="fa:twitter" class="w-3.5 h-3.5" />
+              </a>
+            )}
+          </>
+        ))}
       </div>
       <div class="flex gap-4 text-sm text-[#0e7490] font-semibold flex-wrap justify-center md:justify-start">
         <span class="inline-flex items-center gap-1.5"><Icon name="fa:calendar" class="w-3.5 h-3.5" />{workshop.date}</span>
@@ -141,12 +149,12 @@ const hasTeam = teamMembers.length > 0;
 
     <div class="border border-gray-200 rounded-xl my-6 overflow-hidden">
       <h3 class="px-5 py-4 font-semibold text-[1.05rem] bg-gray-50 text-body-text mb-0 border-b border-gray-200">
-        {hasTeam ? "Meet the Team" : "About the Instructor"}
+        {hasTeam ? "Meet the Team" : (workshop.instructors.length > 1 ? "About the Instructors" : "About the Instructor")}
       </h3>
       <div class="section-content p-5 leading-[1.7] text-gray-700">
         {hasTeam ? (
           <>
-            <div class="team-bio mb-6" set:html={speakerBioHtml} />
+            <div class="team-bio mb-6" set:html={md(primary?.bio ?? "")} />
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
               {teamMembers.map((member) => (
                 <div class="team-member flex items-start gap-3.5 p-3 rounded-xl bg-[#f8fffe] border border-gray-100">
@@ -174,20 +182,26 @@ const hasTeam = teamMembers.length > 0;
             </div>
           </>
         ) : (
-          <div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-6">
-            {speakerImg && (
-              <div class="w-[100px] h-[100px] rounded-full overflow-hidden shrink-0 border-2 border-brand-blue">
-                <Image
-                  src={speakerImg}
-                  alt={workshop.speaker}
-                  width={120}
-                  height={120}
-                  class="w-full h-full object-cover"
-                />
+          workshop.instructors.map((ins) => {
+            const img = ins.image ? findSpeakerImage(speakerImageMap, ins.image) : null;
+            const bioHtml = md(ins.bio);
+            return (
+              <div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-6 [&:not(:first-child)]:mt-6 [&:not(:first-child)]:pt-6 [&:not(:first-child)]:border-t [&:not(:first-child)]:border-gray-100">
+                {img && (
+                  <div class="w-[100px] h-[100px] rounded-full overflow-hidden shrink-0 border-2 border-brand-blue">
+                    <Image
+                      src={img}
+                      alt={ins.name}
+                      width={120}
+                      height={120}
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
+                <div set:html={bioHtml} />
               </div>
-            )}
-            <div set:html={speakerBioHtml} />
-          </div>
+            );
+          })
         )}
       </div>
     </div>
@@ -210,10 +224,10 @@ const hasTeam = teamMembers.length > 0;
           View on map →
         </a>
       )}
-      {workshop.additional && (
+      {workshop.note && (
         <p class="flex items-center gap-2 text-sm text-[#666] mb-0">
           <Icon name="fa:info-circle" class="w-4 h-4 text-brand-blue shrink-0" />
-          {workshop.additional}
+          {workshop.note}
         </p>
       )}
     </div>
@@ -262,17 +276,5 @@ const hasTeam = teamMembers.length > 0;
   .prerequisites :global(ul) {
     list-style: disc;
     padding-left: 1.5rem;
-  }
-
-  .team-bio :global(p) {
-    margin-bottom: 0.5rem;
-  }
-
-  .team-bio :global(p:last-child) {
-    margin-bottom: 0;
-  }
-
-  .team-member-bio :global(p) {
-    margin-bottom: 0;
   }
 </style>

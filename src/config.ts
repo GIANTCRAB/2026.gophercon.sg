@@ -11,7 +11,7 @@ export const siteConfig = {
   speakerLineup: "unconfirmed" as SpeakerLineup,
   nav: [
     { title: "Workshops", link: "/workshops", enabled: true },
-    { title: "Schedule", link: "/schedule", enabled: false },
+    { title: "Schedule", link: "/schedule", enabled: true },
     { title: "Speakers", link: "/speakers", enabled: true },
   ],
 } as const;

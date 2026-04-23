@@ -1,4 +1,15 @@
+[[gold]]
+name = "SerpApi"
+logo = "serpapi.png"
+url = "https://serpapi.com"
+
+
 [[diversity]]
 name = "GoBridge"
 logo = "gobridge.png"
 url = "https://gobridge.org"
+
+[[workshop]]
+name = "Ardan Labs"
+logo = "ardan-labs.png"
+url = "https://ardanlabs.com"

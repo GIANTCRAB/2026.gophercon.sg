@@ -9,9 +9,9 @@ const sponsorshipPdfUrl = content.sponsors.sponsorshipPdfUrl;
 
 const tiers = [
   { key: "platinum" as const, label: "Platinum" },
-  { key: "diversity" as const, label: "Diversity Scholarships" },
   { key: "gold" as const, label: "Gold" },
-  { key: "workshop" as const, label: "Workshop Venue" },
+  { key: "workshop" as const, label: "Workshop" },
+  { key: "diversity" as const, label: "Diversity Scholarships" },
 ];
 
 const hasAnySponsors = tiers.some((t) => sponsors[t.key]?.length > 0);

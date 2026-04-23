@@ -23,10 +23,6 @@ tba = true
 
 [[schedule]]
 type = "talk"
-speakers = ["ethan-lee"]
-
-[[schedule]]
-type = "talk"
 speakers = ["sago35"]
 
 [[schedule]]
@@ -58,3 +54,7 @@ description = """A rapid-fire session of short community talks. 5 minutes each."
 [[schedule]]
 type = "talk"
 speakers = ["dave-cheney"]
+
+[[schedule]]
+type = "talk"
+speakers = ["ellen-gao"]

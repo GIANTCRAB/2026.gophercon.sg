@@ -5,5 +5,5 @@ socialUrl = "https://www.linkedin.com/in/turboencabulator"
 bio = """David is an open source contributor and project member for the Go programming language. David is a well-respected voice within the tech community, speaking on a variety of topics such as software design, performance, and the Go programming language."""
 
 [[sessions]]
-title = "Talk content to be confirmed"
+title = "Using Go and HTTP/2 to solve the speed of light problem"
 kind = "talk"

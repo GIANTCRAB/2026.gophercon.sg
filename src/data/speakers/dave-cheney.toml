@@ -6,4 +6,5 @@ bio = """David is an open source contributor and project member for the Go progr
 
 [[sessions]]
 title = "Using Go and HTTP/2 to solve the speed of light problem"
-kind = "talk"
+kind = "keynote"
+description = """This is the story of how Go became the lynchpin for meeting GitHub Copilot’s latency requirements. In this talk I’ll discuss the unique aspects of proxy’ing LLM requests at a global scale, how Go was the ideal fit to unlock low latency, high bandwidth, network connectivity, and I’ll explain how you can take advantage of HTTP/2 in your own applications, including the surprisingly less than intuitive configuration required to do so."""

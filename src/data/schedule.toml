@@ -1,5 +1,9 @@
 [[schedule]]
 type = "keynote"
+speakers = ["dave-cheney"]
+
+[[schedule]]
+type = "keynote"
 speakers = ["ron-evans"]
 
 [[schedule]]
@@ -23,11 +27,11 @@ tba = true
 
 [[schedule]]
 type = "talk"
-speakers = ["sago35"]
+speakers = ["ellen-gao"]
 
 [[schedule]]
 type = "talk"
-speakers = ["ronna-steinberg"]
+speakers = ["sago35"]
 
 [[schedule]]
 type = "talk"
@@ -50,11 +54,3 @@ id = "lightning-talks"
 title = "Lightning Talks"
 type = "lightning"
 description = """A rapid-fire session of short community talks. 5 minutes each."""
-
-[[schedule]]
-type = "talk"
-speakers = ["dave-cheney"]
-
-[[schedule]]
-type = "talk"
-speakers = ["ellen-gao"]

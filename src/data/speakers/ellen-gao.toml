@@ -5,5 +5,6 @@ socialUrl = "https://www.linkedin.com/in/ellen-gao-b23451109"
 bio = """Ellen’s journey with Go started about 6 years ago when she secured an interview with Flybits for her last internship before graduation. At the time, she had never heard of Go... but seeing the beloved mascot was enough to convince Ellen that she was in for a treat. Since then, Ellen is proud to say that she has grown a lot as a Gopher, and is super excited to share a part of her journey with such an amazing community!"""
 
 [[sessions]]
-title = "Talk content to be confirmed"
+title = "A Retrospective on AI at Flybits"
 kind = "talk"
+description = """Recently I've been reflecting on my own journey with AI coding tools and talking to my coworkers at Flybits about theirs. Everyone uses these tools in their own way, but many of the sentiments were shared. In this talk, we'll discuss common themes that popped up and how individual experiences shape the way we use AI."""

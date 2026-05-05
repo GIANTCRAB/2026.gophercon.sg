@@ -7,4 +7,4 @@ bio = """Ellen’s journey with Go started about 6 years ago when she secured an
 [[sessions]]
 title = "A Retrospective on AI at Flybits"
 kind = "talk"
-description = """Recently I've been reflecting on my own journey with AI coding tools and talking to my coworkers at Flybits about theirs. Everyone uses these tools in their own way, but many of the sentiments were shared. In this talk, we'll discuss common themes that popped up and how individual experiences shape the way we use AI."""
+description = """For our small backend team managing over 60 Go microservices, AI has become a core part of our development workflow. Recently, I’ve been reflecting on my own journey with these tools and how my colleagues have approached theirs. While everyone uses AI in their own way, many of our experiences overlap in interesting ways. In this talk, we’ll discuss the common themes that have emerged and how individual experiences shape the way we use AI."""

@@ -3,7 +3,7 @@ title = "Build Your Own Macropad: From Soldering to Software"
 date = "20 May 2026"
 time = "9:30am to 5:30pm"
 venueRegistration = ""
-venueMapUrl = ""
+venueMapUrl = "https://maps.app.goo.gl/Hr6K6Y9k1N9fV5dL7"
 note = "Hardware kit included — nothing to bring except a laptop."
 description = """In this hands-on workshop, you'll go from a pile of parts to a fully functional, custom macropad. The morning is dedicated to soldering your hardware, and the afternoon is all about bringing it to life using TinyGo.
 
@@ -42,7 +42,9 @@ prerequisites = """
 - Have a functioning Go environment installed
 """
 venue = """
-To be confirmed
+SMU Lee Kong Chian School of Business
+50 Stamford Rd
+Singapore 178899
 """
 
 [instructor]

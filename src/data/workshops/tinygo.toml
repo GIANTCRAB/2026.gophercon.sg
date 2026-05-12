@@ -3,7 +3,7 @@ title = "Hardware Hacking with TinyGo"
 speakers = ["ron-evans"]
 date = "20 May 2026"
 time = "9:30am to 5:30pm"
-venueMapUrl = ""
+venueMapUrl = "https://maps.app.goo.gl/Hr6K6Y9k1N9fV5dL7"
 note = ""
 description = """Get ready for an electrifying experience at GopherCon with the Hybrid Group's epic robot-fest session, powered by Go. Dive into drone control via joystick, reunite with our trusty pal GopherBot, and immerse yourself in more IoT wonders than you can handle!
 
@@ -15,5 +15,7 @@ prerequisites = """
 - Have a functioning Go environment installed
 """
 venue = """
-To be confirmed
+SMU Lee Kong Chian School of Business
+50 Stamford Rd
+Singapore 178899
 """

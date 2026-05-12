@@ -4,7 +4,7 @@ speakers = ["bill-kennedy"]
 date = "20 May 2026"
 time = "9:00am to 5:30pm"
 venueRegistration = ""
-venueMapUrl = ""
+venueMapUrl = "https://maps.app.goo.gl/Hr6K6Y9k1N9fV5dL7"
 note = "Lunch and tea breaks will be provided."
 description = """This class teaches you how to engineer production-level software in Go leveraging the power of a domain-driven, data-oriented architecture that can run in Kubernetes. From the beginning, you will pair-program and read code with the instructor as he walks through the design philosophies and guidelines for engineering software in Go.
 
@@ -44,5 +44,7 @@ Recommended Preparation:
 - Please read the notes in the makefile for installing all the tooling and testing the code before class.
 - Please email the instructor, [Bill Kennedy](mailto:bill@ardanlabs.com) for assistance."""
 venue = """
-To be confirmed
+SMU Lee Kong Chian School of Business
+50 Stamford Rd
+Singapore 178899
 """

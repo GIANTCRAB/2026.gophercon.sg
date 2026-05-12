@@ -47,6 +47,10 @@ speakers = ["arseniy-terekhov"]
 
 [[schedule]]
 type = "talk"
+speakers = ["florin-patan"]
+
+[[schedule]]
+type = "talk"
 speakers = ["sivchari"]
 
 [[schedule]]

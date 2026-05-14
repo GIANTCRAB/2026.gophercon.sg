@@ -20,10 +20,7 @@ id = "sau-sheong"
 id = "bill-kennedy"
 
 [[schedule.panelists]]
-tba = true
-
-[[schedule.panelists]]
-tba = true
+id = "ajey-gore"
 
 [[schedule]]
 type = "talk"
@@ -35,7 +32,7 @@ speakers = ["sago35"]
 
 [[schedule]]
 type = "talk"
-speakers = ["alex-rios"]
+speakers = ["umang-mathur"]
 
 [[schedule]]
 type = "talk"

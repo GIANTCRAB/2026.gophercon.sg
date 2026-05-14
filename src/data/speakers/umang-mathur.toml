@@ -1,0 +1,12 @@
+name = "Umang Mathur"
+company = "National University of Singapore"
+image = "umang-mathur.png"
+socialUrl = "https://www.linkedin.com/in/umathur16/"
+bio = """""Umang Mathur is a Presidential Young Professor in the School of Computing at the National University of Singapore, where he leads the FOCS Lab. His research focuses on developing systematic algorithms and tools for program analysis, particularly for concurrent software.
+
+This work is a collaboration with Zheng Shi and Hien Huynh, graduate students in the FOCS Lab and the primary developers of GCT.""""
+
+[[sessions]]
+title = "Hunting Heisenbugs in Go Using Systematic Concurrency Testing"
+kind = "talk"
+description = """Your Go tests pass, until production deadlocks. In this talk, we show how GCT, our in-house concurrency testing tool for Go systematically controls scheduling of goroutines to expose concurrency bugs hidden from the Go scheduler and replay them deterministically for debugging."""

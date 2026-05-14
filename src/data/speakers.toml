@@ -1,7 +1,5 @@
 order = [
-  "alex-rios",
   "arseniy-terekhov",
-  "sau-sheong",
   "dave-cheney",
   "ellen-gao",
   "florin-patan",
@@ -9,4 +7,7 @@ order = [
   "ron-evans",
   "sivchari",
   "bill-kennedy",
+  "umang-mathur",
+  "sau-sheong",
+  "ajey-gore",
 ]
